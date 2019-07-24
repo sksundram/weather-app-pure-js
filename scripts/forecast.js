@@ -21,8 +21,3 @@ const getCity = async city => {
   const data = await response.json();
   return data[0];
 };
-
-getCity('bengaluru')
-  .then(cityData => getWeather(cityData.Key))
-  .then(weatherData => console.log(weatherData))
-  .catch(err => console.log(err));
