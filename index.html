@@ -12,6 +12,33 @@
     <title>Weather App</title>
   </head>
   <body>
+    <!-- CONTAINER -->
+    <div class="container my-5 mx-auto">
+      <h1 class="text-muted text-center my-4">Weather</h1>
+
+      <!-- FORM -->
+      <form class="change-location my-4 text-center text-muted">
+        <label for="city">Enter a location for weather information</label>
+        <input type="text" name="city" id="city" class="form-control p-4" />
+      </form>
+
+      <!-- WEATHER CARD -->
+      <div class="card shadow-lg rounded">
+        <img src="http://via.placeholder.com/300" class="time card-img-top" />
+        <div class="icon bg-light mx-auto text-center">
+          <!-- icon goes here -->
+        </div>
+        <div class="text-muted text-center text-uppercase details">
+          <h5 class="my-3">City Name</h5>
+          <div class="my-3">Weather condition</div>
+          <div class="display-4 my-4">
+            <span>temp</span>
+            <span>&deg;C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/forecast.js"></script>
     <script src="scripts/app.js"></script>
   </body>
