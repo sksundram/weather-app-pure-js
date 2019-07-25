@@ -1,5 +1,5 @@
 // AccuWeather api key
-const API_KEY = 'R92O9d8pB14vhXzBCE6JArRm4HAmcVfP';
+const API_KEY = config.API_KEY;
 
 // Get weather information
 const getWeather = async locationKey => {
